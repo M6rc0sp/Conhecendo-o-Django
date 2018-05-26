@@ -9,4 +9,4 @@ def index (request):
     }
     return render(request, "index.html", context)
 def a2(request):
-    return HttpResponse("2.html")
+    return HttpResponse("hello word")

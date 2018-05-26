@@ -8,7 +8,15 @@
     <body>
         <h1>Hello, little world.</h1>
         {% for i in quemsomos %}
+            {% if i.logo %}
+            <img src="{{ i.logo.url }}">  
+            {% else %}
+            <p>Não existe imagem</p>
+            {% endif %}  
+        <br>
             <p>{{ i.titulo }}</p>
+        <br>
+            <p>{{ i.descricao }}</p>
         {% endfor %}
     </body>
 </html>
